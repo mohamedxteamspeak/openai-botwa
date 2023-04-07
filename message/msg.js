@@ -250,7 +250,7 @@ try {
 let stdout = execSync('git pull' + (m.fromMe && q ? ' ' + q : ''))
 await conn.sendMessage(from, { text: stdout.toString() }, { quoted: msg });
 } catch {
-let updatee = execSync('git remote set-url origin https://github.com/BrunoSobrino/openai-botwa.git && git pull')
+let updatee = execSync('git remote set-url origin https://github.com/mohamedxteamspeak/openai-botwa.git && git pull')
 await conn.sendMessage(from, { text: updatee.toString() }, { quoted: msg })}
 break
 case 'desactivarwa':
